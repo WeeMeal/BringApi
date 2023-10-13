@@ -1,7 +1,15 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+import io.github.cdimascio.dotenv.Dotenv
+import io.github.cdimascio.dotenv.dotenv
+import java.lang.System.getenv
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+suspend fun main(args: Array<String>) {
+    val dotenv = dotenv()
+    val email = dotenv["EMAIL"]
+    val password = dotenv["PASSWORD"]
+
+
+    val bringApi = BringApi(email = email, password = password)
+//    BringApi().test()
+//    BringApi().test()
+//    bringApi.test()
 }
