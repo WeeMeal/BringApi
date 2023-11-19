@@ -1,0 +1,15 @@
+{
+  "uuid": "2fe17ccb-8c8f-491a-b182-84bf4d975763",
+  "status": "REGISTERED",
+  "purchase": [
+    {
+      "name": "Äpfel",
+      "specification": ""
+    },
+    {
+      "name": "Ananas",
+      "specification": "5 kleine"
+    }
+  ],
+  "recently": []
+}
