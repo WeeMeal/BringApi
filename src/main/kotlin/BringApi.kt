@@ -23,7 +23,6 @@ class BringApi(email: String, password: String) {
     private val baseUrl = "https://api.getbring.com/rest/"
     private var customHeaders: Map<String, String>? = null
 
-    //        val List<domain.BringList> = listOf()
     private var client = HttpClient(CIO) {
         install(ContentNegotiation) {
             gson()
