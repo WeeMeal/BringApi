@@ -1,4 +1,5 @@
-//import domain.Product
+//package de.weemeal.bringapi
+//import de.weemeal.bringapi.domain.Product
 //import io.github.cdimascio.dotenv.dotenv
 //
 //// da es hier bald zu einer Lib wird, ist die Main nur noch für einfache Testt Zwecke. Wird in Zukunft gelöscht.
