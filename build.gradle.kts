@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.github.WeeMeal"
-version = "0.0.4-alpha"
+version = "0.0.1"
 val ktorVersion: String by project
 
 repositories {
