@@ -5,7 +5,7 @@ plugins {
     application
 }
 
-group = "com.github.jitpack"
+group = "com.github.WeeMeal"
 version = "0.0.2-alpha"
 val ktorVersion: String by project
 
