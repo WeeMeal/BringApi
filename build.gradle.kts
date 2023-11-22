@@ -1,15 +1,17 @@
 plugins {
     kotlin("jvm") version "1.9.20"
-    application
     kotlin("plugin.serialization") version "1.9.20"
+    `maven-publish`
 }
 
-group = "de.weemeal"
-version = "1.0-SNAPSHOT"
+group = "com.github.WeeMeal"
+version = "0.0.4-alpha"
 val ktorVersion: String by project
 
 repositories {
     mavenCentral()
+    mavenLocal()
+    maven { url = uri("https://jitpack.io")}
 }
 
 dependencies {
@@ -29,8 +31,4 @@ tasks.test {
 
 kotlin {
     jvmToolchain(8)
-}
-
-application {
-    mainClass.set("MainKt")
 }

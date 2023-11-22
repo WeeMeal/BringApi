@@ -1,30 +1,15 @@
-import BringQrConverter.Companion.addProductsToList
-import io.github.cdimascio.dotenv.dotenv
-
-suspend fun main() {
-    val dotenv = dotenv()
-    val email = dotenv["EMAIL"]
-    val password = dotenv["PASSWORD"]
-
-    val jsonStr = """
-      {
-        "purchase": [
-            {
-                "name": "JsonÄpfel111111111",
-                "specification": "111111111"
-            },
-            {
-                "name": "JsonAnanas11111111",
-                "specification": "5 kleine111111"
-            }
-        ]
-      }
-    """
-
-    val qrCode = QrCode(jsonStr)
-    val bringApi = BringApi(email = email, password = password)
-    println(bringApi.getPurchaseList())
-    BringQrConverter(qrCode = qrCode, bringApi = bringApi).addProductsToList()
-    println(bringApi.getPurchaseList())
-
-}
+//import domain.Product
+//import io.github.cdimascio.dotenv.dotenv
+//
+//// da es hier bald zu einer Lib wird, ist die Main nur noch für einfache Testt Zwecke. Wird in Zukunft gelöscht.
+//suspend fun main() {
+//    val dotenv = dotenv()
+//    val email = dotenv["EMAIL"]
+//    val password = dotenv["PASSWORD"]
+//
+//    val bringApi = BringApi(email = email, password = password)
+//    println(bringApi.getPurchaseList())
+//    bringApi.addProductToList(Product("JsonÄpfel111111111", "111111111"))
+//    println(bringApi.getPurchaseList())
+//
+//}
