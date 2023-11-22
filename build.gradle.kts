@@ -1,11 +1,12 @@
 plugins {
     kotlin("jvm") version "1.9.20"
-    application
     kotlin("plugin.serialization") version "1.9.20"
+    `maven-publish`
+    application
 }
 
-group = "de.weemeal"
-version = "1.0-SNAPSHOT"
+group = "com.github.jitpack"
+version = "0.0.2-alpha"
 val ktorVersion: String by project
 
 repositories {
