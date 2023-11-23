@@ -1,11 +1,11 @@
-package de.weemeal.bringapi
+package de.weemeal.bring
 
-import de.weemeal.bringapi.domain.BringList
-import de.weemeal.bringapi.domain.Product
-import de.weemeal.bringapi.domain.User
-import de.weemeal.bringapi.domain.User.Companion.isNotNull
-import de.weemeal.bringapi.domain.User.Companion.isNull
-import de.weemeal.bringapi.exceptions.AlreadyLoggedInException
+import de.weemeal.bring.domain.BringList
+import de.weemeal.bring.domain.Product
+import de.weemeal.bring.domain.User
+import de.weemeal.bring.domain.User.Companion.isNotNull
+import de.weemeal.bring.domain.User.Companion.isNull
+import de.weemeal.bring.exceptions.AlreadyLoggedInException
 import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.engine.cio.*

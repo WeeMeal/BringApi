@@ -1,4 +1,4 @@
-package de.weemeal.bringapi.domain
+package de.weemeal.bring.domain
 
 data class User(
     val uuid: String,

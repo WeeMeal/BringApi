@@ -1,3 +1,3 @@
-package de.weemeal.bringapi.exceptions
+package de.weemeal.bring.exceptions
 
 class AlreadyLoggedInException(message: String?) : Exception(message)

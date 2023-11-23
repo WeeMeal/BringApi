@@ -1,4 +1,4 @@
-package de.weemeal.bringapi.domain
+package de.weemeal.bring.domain
 
 import kotlinx.serialization.Serializable
 
