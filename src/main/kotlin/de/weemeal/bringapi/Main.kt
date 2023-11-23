@@ -3,6 +3,7 @@
 //import io.github.cdimascio.dotenv.dotenv
 //
 //// da es hier bald zu einer Lib wird, ist die Main nur noch für einfache Testt Zwecke. Wird in Zukunft gelöscht.
+//// TODO: muss durch eine Testklasse ersetzt werden!
 //suspend fun main() {
 //    val dotenv = dotenv()
 //    val email = dotenv["EMAIL"]
