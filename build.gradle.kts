@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "de.weemeal"
-version = "0.0.4"
+version = "0.0.1"
 val ktorVersion: String by project
 
 repositories {
